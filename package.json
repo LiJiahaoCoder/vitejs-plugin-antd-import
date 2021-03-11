@@ -1,0 +1,30 @@
+{
+  "name": "@vitejs/plugin-antd-import",
+  "version": "1.0.0",
+  "description": "Automaticlly import the corresponding style file when importing components.",
+  "main": "index.js",
+  "author": "Jiahao Li",
+  "scripts": {
+    "prepublish": "tsc",
+    "publish": ""
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiJiahaoCoder/vitejs-plugin-antd-import.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LiJiahaoCoder/vitejs-plugin-antd-import/issues"
+  },
+  "devDependencies": {
+    "rollup": "^2.41.1",
+    "typescript": "^4.2.3"
+  }
+}

@@ -1,0 +1,12 @@
+# directories
+node_modules
+
+# configs
+.gitignore
+tsconfig.json
+
+# files
+index.ts
+
+# logs
+yarn-error.log
