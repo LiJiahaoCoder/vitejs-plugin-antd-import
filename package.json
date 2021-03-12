@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Jiahao Li",
   "scripts": {
-    "prepublish": "tsc"
+    "prepublishOnly": "tsc"
   },
   "files": [
     "index.js",
