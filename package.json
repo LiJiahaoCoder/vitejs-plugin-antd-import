@@ -1,7 +1,7 @@
 {
   "name": "@vitejs/plugin-antd-import",
   "version": "1.0.0",
-  "description": "Automaticlly import the corresponding style file when importing components.",
+  "description": "Automatically import the corresponding style file when importing components.",
   "main": "index.js",
   "author": "Jiahao Li",
   "scripts": {
