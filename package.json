@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-antd-import",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Automatically import the corresponding style file when importing components.",
   "main": "index.js",
   "author": "Jiahao Li",

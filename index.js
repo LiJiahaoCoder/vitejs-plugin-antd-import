@@ -1,12 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const ANTD_IMPORT_LINE_REG = /import {[\w,\s]+} from (\'|\")antd(\'|\");?/g;
 function transformToKebabCase(name) {
     return name.replace(/([^-])([A-Z])/g, '$1-$2').toLocaleLowerCase();
 }
-export default function antdImportPlugin() {
+function antdImportPlugin() {
     return {
         name: 'vite-plugin-react-antd-import',
         transform(code) {
-            if (/antd/.test(code)) {
+            if (/\"antd\";/.test(code)) {
                 const importLine = code.match(ANTD_IMPORT_LINE_REG)[0];
                 const cssLines = importLine
                     .match(/\w+/g)
@@ -19,3 +21,4 @@ export default function antdImportPlugin() {
         },
     };
 }
+exports.default = antdImportPlugin;

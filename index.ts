@@ -10,7 +10,7 @@ export default function antdImportPlugin(): Plugin {
   return {
     name: 'vite-plugin-react-antd-import',
     transform(code) {
-      if (/antd/.test(code)) {
+      if (/\"antd\";/.test(code)) {
         const importLine = code.match(ANTD_IMPORT_LINE_REG)![0];
         const cssLines = importLine
           .match(/\w+/g)!
